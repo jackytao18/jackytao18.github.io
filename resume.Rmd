@@ -1,0 +1,71 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<br/>
+ 
+### Education
+
+**School of Life Sciences, Fudan University** [**Shanghai, China**]{style="float:right"}
+
+*Bachelor of Science in Biological Sciences* [*Sept. 2018- Jun. 2022 *]{style="float:right"}
+
+**Relevant Coursework:** Biostatistics, Bioinformatics, Python Programming, Biochemistry, Genetics
+
+<br/>
+
+**Mailman School of Public Health, Columbia University** [**New York, the United States**]{style="float:right"}
+
+*Master of Science in Biostatistics* [*Sept. 2022- May 2024(Expected)*]{style="float:right"}
+
+<br/>
+ 
+### Research Experience
+
+**Rapid detection of pathogenic microorganisms** | Researcher [*Mar. 2021- June 2022*]{style="float:right"}
+
+* Organized 500 pathogenic microorganisms from Huashan Hospital and gathered genome sequence files using FTP with batching
+
+* Investigated a method using BLAST+’s new function parameters to efficiently capture a species’ unique fragments
+
+* Designed and optimized the probe for each pathogenic microorganism by modifying codes of Primer3 and MPprimer to be suitable for multiple rapid PCR
+
+* Presented preliminary results for 273 respiratory pathogenic microorganisms and explored the more general organisms
+
+<br/>
+
+### Professional Experience
+
+**Pricewaterhouse Coopers** [**Shanghai, China**]{style="float:right"}
+
+*Assurance Winter Intern* [*Jan. 2021 –Mar. 2021*]{style="float:right"}
+
+* Prepared financial statements, data breakdown, and analyses of the company's annual financial position using Excel
+
+* Tracked bank confirmations and verified income and expenditure status
+
+<br/>
+
+### Skills
+
+* Computer skills: Microsoft Office, R, Python, Unix and GraphPad
+* Languages: Mandarin (native), English(fluent), French (basic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
