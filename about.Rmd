@@ -1,0 +1,17 @@
+---
+title: "About this website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Jiajun's website
+
+The website is created for P8105 Homework 4.
+
+Jeff is a handsome and talented Professor.
+
+Below is my favorite background image.
+
+![](images/background.jpg)
