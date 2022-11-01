@@ -1,0 +1,67 @@
+---
+title: "Instacart Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(flexdashboard)
+library(plotly)
+```
+
+```{r, include=FALSE}
+data("instacart")
+
+instacart = 
+  instacart %>% 
+  as_tibble(instacart)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### The number of items ordered in each aisle (>20000)
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  filter(n > 20000) %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>%  
+  plot_ly(
+    x = ~aisle, y = ~n, color = ~aisle,
+    type = "bar"
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Three products' ordered time distribution
+
+```{r}
+instacart %>% 
+  filter(product_name %in% c("Coffee Ice Cream", "Banana", "Green Beans")) %>% 
+  mutate(product_name = fct_reorder(product_name, order_hour_of_day)) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, color = ~product_name,
+    type = "box", colors = "viridis"
+  )
+```
+
+### The number of orders over time of day in differedt days of week
+
+```{r}
+line_plot =
+  instacart %>%
+    mutate(order_dow = as.character(order_dow)) %>% 
+    group_by(order_dow, order_hour_of_day) %>% 
+    count() %>% 
+    ggplot(aes(x = order_hour_of_day, y = n, color = order_dow)) +
+    geom_path()
+
+ggplotly(line_plot)
+```
